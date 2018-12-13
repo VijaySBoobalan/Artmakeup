@@ -1,4 +1,4 @@
-@include('layouts.loginlayouts.header')
+@include('loginlayouts.layouts.header')
 
 <body>
     <section class="material-half-bg">
@@ -12,7 +12,7 @@
           <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>LOGIN IN</h3>
           <div class="form-group">
             <label class="control-label">E-Mail</label>
-            <input id="email" type="email" class="form-control{{ $errors->has('email') ? 'is-invalid' : ''}}" name="email" value="{{ old('email') }}" required autofocus>
+            <input id="email" type="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : ''}}" name="email" value="{{ old('email') }}" required>
 
               @if ($errors->has('email'))
                   <span class="invalid-feedback" role="alert">

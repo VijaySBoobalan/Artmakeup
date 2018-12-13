@@ -1,10 +1,7 @@
 
-@include('imageupload.layout.header')
-@include('imageupload.layout.sidebar')
+@extends('imageupload.layout.master')
 @section('content')
 
-
-@endsection
 <main class="app-content">
       <div class="app-title">
         <div>
@@ -26,7 +23,7 @@
               <form action="#">
                 <button type="submit">Upload</button>
                
-                <input type="file" class="btn btn-info btn-sm" name="images[]" style="margin: 8px;">
+                <input type="file" class="btn btn-info btn-sm" name="images[]" style="margin: 8px;" multiple>
               </form>
               
             </div>
@@ -57,4 +54,5 @@
 
   {{$show->OnEachSide(2)->Links()}}  
         
-@include('imageupload.layout.footer')
+
+@endsection

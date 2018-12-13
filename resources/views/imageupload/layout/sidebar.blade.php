@@ -1,3 +1,4 @@
+@section('sidebar')
 <aside class="app-sidebar">
       
       <ul class="app-menu">
@@ -9,3 +10,4 @@
         
       </ul>
     </aside>
+@show

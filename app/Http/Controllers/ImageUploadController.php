@@ -3,27 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Upload;
-use File;
-use Illuminate\Support\Facades\Storage;
-use Intervention\Image\ImageManagerStatic as Image;
+use App\Image;
 class ImageUploadController extends Controller
 {
-      public function __construct()
-    {
+    public function __construct(){
         $this->middleware('auth');
+        $this->Image = new Image;
     }
+
     public function index(){
-    	$show=Upload::all();
-        $show=Upload::paginate(32);
-    	return view('imageupload.image',compact('show'));
+        $show = $this->Image->paginate(32);
+    	return view('imageupload.imageupload',compact('show'));
     }
 
     public function store(request $request){
         if ($files=$request->file('images')){
             foreach ($files as $file){
                 $url = $this->upload_picture($file);
-                $file = new Upload;
+                $file = new Image;
                 if(!empty($url)){
                     $file->name = $url;
                 }else{
@@ -47,11 +44,12 @@ class ImageUploadController extends Controller
         }
         return "";
     }
+    
     public function delete($id){
-            $photo = Upload::find($id);
-            unlink(public_path().($photo->name));
-            $photo->delete();
-            return back();
+        $photo = $this->Image->find($id);
+        unlink(public_path().($photo->name));
+        $photo->delete();
+        return back();
     }
               
         

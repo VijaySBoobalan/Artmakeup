@@ -18,8 +18,8 @@ Auth::routes();
 Route::get('/image', 'ImageUploadController@index');
 Route::POST('/store','ImageUploadController@store')->name('upload');
 Route::delete('/delete/{id}/delete','ImageUploadController@delete')->name('delete');
+/*
 
-
-// Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
-// Route::get('/register', 'Auth\RegisterController@register')->name('register');
-// Route::get('/login', 'Auth\LoginController@login')->name('login');
+Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+Route::get('/register', 'Auth\RegisterController@register')->name('register');
+Route::get('/login', 'Auth\LoginController@login')->name('login');*/
