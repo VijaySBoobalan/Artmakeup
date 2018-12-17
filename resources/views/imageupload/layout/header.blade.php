@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,46 +24,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style >
-       .img{
+    .img{
     width: 100%;
     height: auto;
-}
-.img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 300px;
-  max-width: 800px;
-  height: 200px;
-
-}
-</style>
-
+    }
+    .img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    max-width: 800px;
+    height: 200px;
+    }
+    </style>
   </head>
   <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-
     <header class="app-header"><a class="app-header__logo" href="dashboard.html"><img class="img1" src="./images/logo.png" alt="User Image"></a>
-      <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
-      <!-- Navbar Right Menu-->
-      <ul class="app-nav">
-        
+    <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+    <!-- Navbar Right Menu-->
+    <ul class="app-nav">
       
-        <!-- User Menu-->
-        <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
-          <ul class="dropdown-menu settings-menu dropdown-menu-right">
-            <li><a class="dropdown-item" href="reset.html"><i class="fa fa-user fa-lg"></i> Reset Password</a></li>
-            <li>{{-- <a class="dropdown-item" href="index.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a> --}}<a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-lg"></i>{{ __('Logout') }}
-                                    </a></li>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-          </ul>
-        </li>
+      
+      <!-- User Menu-->
+      <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
+      <ul class="dropdown-menu settings-menu dropdown-menu-right">
+        <li><a class="dropdown-item" href="reset.html"><i class="fa fa-user fa-lg"></i> Reset Password</a></li>
+        <li><a class="dropdown-item" href="{{ route('logout') }}"
+          onclick="event.preventDefault();
+        document.getElementById('logout-form').submit();"><i class="fa fa-sign-out fa-lg"></i>Logout</a></li>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+          @csrf
+        </form>
       </ul>
-    </header>
-
-    <!-- Sidebar menu-->
-    <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+    </li>
+  </ul>
+</header>
+<!-- Sidebar menu-->
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
