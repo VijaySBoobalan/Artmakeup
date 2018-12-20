@@ -1,0 +1,48 @@
+
+ul li a{
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 200;
+  font-size: 19px;
+  font-family: 'Lato';
+  margin-top: 10px;
+}
+ul li a:hover{
+  color: white;
+}
+ul li a img{
+  margin-top: -10px;
+}
+.navbar-toggler-icon{
+color: white;
+}
+.collapse .cen{
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.logo{
+  width: 100px;
+  height: auto;
+}
+.menu-cen{
+  margin-left: 15%;
+}
+.cen{
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon{
+  margin-left: 50%
+}
+#navbar{
+  padding-top:20px;
+}
+.navbar{
+  height: 80px;
+}
+.menu-mob{
+  background-color:#94428f;
+  max-width: 120%;
+}

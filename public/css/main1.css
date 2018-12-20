@@ -1,0 +1,233 @@
+html {
+  scroll-behavior: smooth;
+
+}
+body{
+width: 100%;
+overflow-x: hidden;
+
+}
+.about_img{
+  height: auto;
+  margin-left: 35%;
+  margin-top:120px;
+}
+.about_img_sm{
+  height: 90%;
+  width: 85%;
+  margin-left: 10%;
+  margin-top: 110px;
+}
+.about_logo{
+  margin-left:10%;
+  margin-top: 260px;
+}
+.about_logo_sm{
+  width: 45%;
+  height: 45%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.artist_name{
+  margin-top: 20px;
+  margin-left: 45px;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 28px;
+  color: white;
+}
+.artist_name_sm{
+  margin-top: 15vw;
+  margin-left: 60px;
+  margin-right: auto;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 20px;
+  color: white;
+}
+section{
+  position: relative;
+}
+.about_left_content{
+  padding-left: 100px;
+  margin-top: 120px;
+  padding-right: 10px;
+}
+.about_right_content{
+  margin-top: -800px;
+  margin-left: 50%;
+  padding-right: 100px;
+  padding-left: 10px;
+
+}
+.about_img-1{
+  height: auto;
+  margin-left: 50px;
+  margin-top:120px;
+}
+.about_h1{
+  font-family: 'Homemade Apple', cursive;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.about_h1_sm{
+  font-family: 'Homemade Apple', cursive;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  text-align:center;
+  line-height: 50px;
+}
+.about_p{
+  font-family: 'Lato';
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.active{
+  font-weight: 900;
+}
+.right-img{
+  margin-top: -800px;
+  margin-left: 580px;
+  padding-right: 100px;
+}
+
+.about_art_img{
+  width: 600px;
+  height: auto;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.contact_img{
+  padding-top: 120px;
+  margin-left: 100px;
+}
+.contact_img_sm{
+  margin-top: 120px;
+  margin-left: 1px;
+}
+.right_form{
+  margin-top: 150px;
+  padding-right: 250px;
+}
+.heading{
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading a{
+  text-decoration: none;
+}
+.heading a:hover{
+  font-size: 32px;
+  color: white;
+}
+.heading_1{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading_2{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+.gallery{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.port-l{
+  width: 400px;
+  height: 400px;
+  }
+.port-r{
+  width: 400px;
+  margin-left: -16px;
+  height: 400px;
+  }
+.port-m{
+  margin-left: 15.5px;
+  width: 800px;
+  height: 450px;
+
+}
+.video{
+  max-width: 900px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section_gap{
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+.section_sm{
+  padding-left: 10px;
+  padding-top: 70px;
+  padding-bottom: 10px;
+}
+.img-sm{
+  margin-top: 20px;
+  padding-left: 20px;
+  width: 90%;
+  height: 90%;
+
+}
+
+.heading-sm{
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading-sm a{
+  text-decoration: none;
+  font-size: 25px;
+}
+.heading-sm a:hover{
+  color:#94428f;
+  font-size: 25px;
+}
+.port-s{
+  background-size: cover;
+  width: 115%;
+  height:100%;
+  }
+.port-sm{
+  width: 100%;
+  height:100%;
+  }
+.center{
+  margin-left:40%;
+  margin-right: auto;
+}
+.form-control{
+  border-radius: 12px;
+}
+.form-control::placeholder{
+  color: #94428f;
+}
+form .btn{
+  margin-left:46%;
+  width: 100px;
+  margin-right: auto;
+  color: #94428f;
+  border-radius: 12px;
+
+}
+.w3-hide-large form .btn{
+  width: 80px;
+  margin-left:40%;
+  margin-right: auto;
+  color: #94428f;
+  border-radius: 12px;
+
+}

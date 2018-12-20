@@ -11,15 +11,31 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/admin/login', function () {
     return view('auth.login');
 });
+
+Route::get('/about', function() {
+    return view ('makeup.about');
+});
+Route::get('/contact', function() {
+    return view('makeup.contact');
+});
+Route::get('/portfolio', function() {
+    return view('makeup.portfolio');
+});
+Route::get('/', function() {
+    return view('makeup.index');
+});
+
+Route::get('/services', function() {
+    return view('makeup.services');
+});
+
 Auth::routes();
+Route::get('/home', function() {
+    return redirect('/image');
+});
 Route::get('/image', 'ImageUploadController@index');
 Route::POST('/store','ImageUploadController@store')->name('upload');
 Route::delete('/delete/{id}/delete','ImageUploadController@delete')->name('delete');
-/*
-
-Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
-Route::get('/register', 'Auth\RegisterController@register')->name('register');
-Route::get('/login', 'Auth\LoginController@login')->name('login');*/
