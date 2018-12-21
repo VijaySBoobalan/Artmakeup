@@ -1,4 +1,4 @@
-@include('loginlayouts.layouts.master')
+@extends('loginlayouts.layouts.master')
 <section class="login-content">
   
   <div class="login-box">

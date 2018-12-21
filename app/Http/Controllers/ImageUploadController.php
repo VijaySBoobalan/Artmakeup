@@ -17,24 +17,28 @@ class ImageUploadController extends Controller
     }
 
     public function store(request $request){
+        
         if ($files=$request->file('images')){
             foreach ($files as $file){
                 $url = $this->upload_picture($file);
-                $file = new Image;
+                $store = new Image;
+                $store->category=request('category');
                 if(!empty($url)){
-                    $file->name = $url;
+                    $store->name = $url;
                 }else{
-                    $file->name = null;
+                    $store->name = null;
                 }
-                $file->save();
+                $store->save();
+                 
             }
             return back();
         }
+
     }
 
     public function upload_picture($picture){
         $file_name = time();
-        $file_name.= rand();
+        $file_name= rand();
         $file_name = sha1($file_name);
         if ($picture){
             $ext = $picture->getClientOriginalExtension();

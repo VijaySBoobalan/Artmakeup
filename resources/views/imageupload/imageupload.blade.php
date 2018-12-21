@@ -16,13 +16,20 @@
     <div class="title">
       <center>
       <div class="topnav">
-        <a><b>+</b>Add Images</a>
-        <div class="search-container">
-          <form action="#">
-            <button type="submit">Upload</button>
-            <input type="file" class="btn btn-info btn-sm" name="images[]" style="margin: 8px;" multiple>
-          </form>
-        </div>
+       <div class="row">
+        <div class="col-sm-4">
+            <select  class="form-control" name="category" style="margin: 8px;">
+              <option selected disabled>Select Category</option>
+              <option value="bridal">Bridal</option>
+              <option value="fashion">Fashion</option>
+            </select>
+       </div>
+       
+       <input type="file" class="btn btn-info btn-sm" name="images[]" style="margin: 8px;" multiple>
+          <button type="submit" class="btn btn-primary" style="margin: 8px;">Upload</button>
+       
+      </div>
+      </div>
       </div>
       </center>
       <br>
