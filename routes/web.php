@@ -21,9 +21,7 @@ Route::get('/about', function() {
 Route::get('/contact', function() {
     return view('makeup.contact');
 });
-Route::get('/portfolio', function() {
-    return view('makeup.portfolio');
-});
+Route::get('/portfolio','ArtmakeupController@portfolio');
 Route::get('/', function() {
     return view('makeup.index');
 });

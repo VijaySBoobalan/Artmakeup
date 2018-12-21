@@ -11,31 +11,51 @@
         <br>
       </div>
       <div class="row">
-        <h1 class="about_h1 heading_1">Bridal</h1>
+        <h1 class="about_h1 heading_1" value="bridal">Bridal</h1>
       </div>
+     
       <div class="gallery">
         <div class="row">
           <div class="col-6">
-            <img class="port-l"src="img\portfolio\img2.jpg" alt="">
+            @if(!empty(($Bridals[0])))
+            <img class="port-l"src="{{ $Bridals[0]->name }}" alt="">
+            @endif
+          </div>
+          
+          <div class="col-6">
+            @if(!empty(($Bridals[1])))
+            <img class="port-r"src="{{ $Bridals[1]->name }}" alt="">
+             @endif
+          </div>
+        </div>
+        
+        <div class="row">
+          @if(!empty(($Bridals[2])))
+              <img class="port-m" src="{{ $Bridals[2]->name }}" alt="">
+          @endif
+        </div>
+        <div class="row">
+          <div class="col-6">
+            @if(!empty(($Bridals[3])))
+            <img class="port-l"src="{{ $Bridals[3]->name }}" alt="">
+            @endif
           </div>
           <div class="col-6">
-            <img class="port-r"src="img\portfolio\img3.jpg" alt="">
+            @if(!empty(($Bridals[4])))
+            <img class="port-r"src="{{ $Bridals[4]->name }}" alt="">
+            @endif
           </div>
         </div>
         <div class="row">
-          <img class="port-m" src="img\portfolio\img4.jpg" alt="">
-        </div>
+          @if(!empty(($Bridals[5])))
+          <img class="port-m" src="{{ $Bridals[5]->name }}" alt="">
+          @endif
+        </div><br>
         <div class="row">
-          <div class="col-6">
-            <img class="port-l"src="img\portfolio\img5.jpg" alt="">
-          </div>
-          <div class="col-6">
-            <img class="port-r"src="img\portfolio\img6.jpg" alt="">
-          </div>
+          <div class="col-sm-12">
+          <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" >
         </div>
-        <div class="row">
-          <img class="port-m" src="img\portfolio\img7.jpg" alt="">
-        </div>
+      </div>
       </div>
     </section>
     <section id="fashion" class="section_gap">
@@ -46,26 +66,43 @@
       <div class="gallery">
         <div class="row">
           <div class="col-6">
-            <img class="port-l"src="img\portfolio\fas1.jpg" alt="">
+            @if(!empty(($Fashion[0])))
+            <img class="port-l"src="{{$Fashion[0]->name}}" alt="">
+            @endif
           </div>
           <div class="col-6">
-            <img class="port-r"src="img\portfolio\fas2.jpg" alt="">
+            @if(!empty(($Fashion[1])))
+            <img class="port-r"src="{{$Fashion[1]->name}}" alt="">
+            @endif
           </div>
         </div>
         <div class="row">
-          <img class="port-m" src="img\portfolio\fas3.jpg" alt="">
+          @if(!empty(($Fashion[2])))
+          <img class="port-m" src="{{$Fashion[2]->name}}" alt="">
+          @endif
         </div>
         <div class="row">
           <div class="col-6">
-            <img class="port-l"src="img\portfolio\fas4.jpg" alt="">
+            @if(!empty(($Fashion[3])))
+            <img class="port-l"src="{{$Fashion[3]->name}}" alt="">
+            @endif
           </div>
           <div class="col-6">
-            <img class="port-r"src="img\portfolio\fas5.jpg" alt="">
+            @if(!empty(($Fashion[4])))
+            <img class="port-r"src="{{$Fashion[4]->name}}" alt="">
+            @endif
           </div>
         </div>
         <div class="row">
-          <img class="port-m" src="img\portfolio\fas6.jpg" alt="">
+          @if(!empty(($Fashion[5])))
+          <img class="port-m" src="{{$Fashion[5]->name}}" alt="">
+          @endif
+        </div><br>
+        <div class="row">
+          <div class="col-sm-12">
+          <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" >
         </div>
+      </div>
       </div>
     </section>
   </div>
