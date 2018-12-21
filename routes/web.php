@@ -39,3 +39,5 @@ Route::get('/home', function() {
 Route::get('/image', 'ImageUploadController@index');
 Route::POST('/store','ImageUploadController@store')->name('upload');
 Route::delete('/delete/{id}/delete','ImageUploadController@delete')->name('delete');
+
+Route::get('/portfolio', 'ArtmakeupController@index');

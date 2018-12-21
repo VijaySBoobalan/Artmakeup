@@ -16,7 +16,9 @@
       <div class="gallery">
         <div class="row">
           <div class="col-6">
-            <img class="port-l"src="img\portfolio\img2.jpg" alt="">
+            @foreach($image as $img)
+            <img class="port-l"src="{{$img->name}}" alt="">
+            @endforeach
           </div>
           <div class="col-6">
             <img class="port-r"src="img\portfolio\img3.jpg" alt="">
