@@ -50,8 +50,10 @@
       </div>
     </div>
     @endforeach
+    
     <br>
   </div>
-  {{$show->OnEachSide(2)->Links()}}
   
-  @endsection
+    {{$show->OnEachSide(2)->Links()}}
+ 
+   @endsection

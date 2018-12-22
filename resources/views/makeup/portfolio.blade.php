@@ -53,7 +53,8 @@
         </div><br>
         <div class="row">
           <div class="col-sm-12">
-          <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" >
+            <a href="{{'/bridal'}}">
+          <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" ></a>
         </div>
       </div>
       </div>
@@ -100,75 +101,112 @@
         </div><br>
         <div class="row">
           <div class="col-sm-12">
-          <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" >
+         <a href="{{'/fashion'}}"><input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" ></a>
         </div>
       </div>
       </div>
     </section>
   </div>
-  <div class="w3-hide-large">
-  <div class="row ">
-    <h1 class="about_h1 heading-sm"> <a href="#bridal-sm">Bridal</a> & <a href="#fashion-sm">Fashion</a> </h1>
-  </div>
-  <section id="bridal-sm">
-    <div class="row" >
-    </div>
-    <div class="row">
-      <h1 class="about_h1 heading_2">Bridal</h1>
-    </div>
-    <div class="gallery">
-      <div class="row">
-        <div class="col-6">
-          <img class="port-s"src="img\portfolio\img2.jpg" width="460" height="345" alt="">
-        </div>
-
-        <div class="col-6">
-          <img class="port-s"src="img\portfolio\img3.jpg" width="460" height="345" alt="">
-        </div>      </div>
-      <div class="row">
-        <img class="port-sm" src="img\portfolio\img4.jpg" width="460" height="345" alt="">
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <img class="port-s"src="img\portfolio\img5.jpg" width="460" height="345" alt="">
-        </div>
-        <div class="col-6">
-          <img class="port-s"src="img\portfolio\img6.jpg" width="460" height="345" alt="">
-        </div>      </div>
-      <div class="row">
-        <img class="port-sm" src="img\portfolio\img7.jpg"  width="460" height="345" alt="">
-      </div>
-
-  </section>
-  <section id="fashion-sm" class="section_gap">
-    <br>
-    <div class="row">
-      <h1 class="about_h1 heading_2">Fashion</h1>
-    </div>
-    <div class="gallery">
-      <div class="row">
-        <div class="col-6">
-          <img class="port-s" src="img\portfolio\fas1.jpg" width="460" height="345" alt="">
-        </div>
-        <div class="col-6">
-          <img class="port-s" src="img\portfolio\fas2.jpg"  width="460" height="345" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <img class="port-sm" src="img\portfolio\fas3.jpg"  width="460" height="345" alt="">
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <img class="port-s" src="img\portfolio\fas4.jpg" width="460" height="345" alt="">
-        </div>
-        <div class="col-6">
-          <img class="port-s" src="img\portfolio\fas5.jpg"  width="460" height="345" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <img class="port-sm" src="img\portfolio\fas6.jpg"  width="460" height="345"alt="">
-      </div>
-    </div>
-  </section>
+ <div class="w3-hide-large">
+<div class="row ">
+<h1 class="about_h1 heading-sm"> <a href="#bridal-sm">Bridal</a> & <a href="#fashion-sm">Fashion</a> </h1>
 </div>
-  @endsection
+<section id="bridal-sm">
+<div class="row" >
+</div>
+<div class="row">
+<h1 class="about_h1 heading_2">Bridal</h1>
+</div>
+<div class="gallery">
+<div class="row">
+<div class="col-6">
+@if(!empty(($Bridals[0])))
+<img class="port-s"src="{{ $Bridals[0]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+
+<div class="col-6">
+@if(!empty(($Bridals[1])))
+<img class="port-s"src="{{ $Bridals[1]->name }}" width="460" height="345" alt="">
+@endif
+</div> 
+</div>
+<div class="row">
+@if(!empty(($Bridals[2])))
+<img class="port-sm" src="{{ $Bridals[2]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+<div class="row">
+<div class="col-6">
+@if(!empty(($Bridals[3])))
+<img class="port-s"src="{{ $Bridals[3]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+<div class="col-6">
+@if(!empty(($Bridals[4])))
+<img class="port-s"src="{{ $Bridals[4]->name }}" width="460" height="345" alt="">
+@endif
+</div> 
+</div>
+<div class="row">
+@if(!empty(($Bridals[5])))
+<img class="port-sm" src="{{ $Bridals[5]->name }}" width="460" height="345" alt="">
+@endif
+</div><br>
+<div class="row">
+<div class="col-sm-12">
+<a href="{{'/bridal'}}">
+<input type="button" class="btn btn-dark" name="" Value="Show More" style="float: right;" ></a>
+</div>
+</div>
+</section>
+<section id="fashion-sm" class="section_gap">
+<br>
+<div class="row">
+<h1 class="about_h1 heading_2">Fashion</h1>
+</div>
+<div class="gallery">
+<div class="row">
+<div class="col-6">
+@if(!empty(($Fashion[0])))
+<img class="port-s" src="{{ $Bridals[0]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+<div class="col-6">
+@if(!empty(($Fashion[1])))
+<img class="port-s" src="{{ $Bridals[1]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+</div>
+<div class="row">
+@if(!empty(($Fashion[2])))
+<img class="port-sm" src="{{ $Bridals[2]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+<div class="row">
+<div class="col-6">
+@if(!empty(($Fashion[3])))
+<img class="port-s" src="{{ $Bridals[3]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+<div class="col-6">
+@if(!empty(($Fashion[4])))
+<img class="port-s" src="{{ $Bridals[4]->name }}" width="460" height="345" alt="">
+@endif
+</div>
+</div>
+<div class="row">
+@if(!empty(($Fashion[5])))
+<img class="port-sm" src={{ $Bridals[5]->name }}" width="460" height="345"alt="">
+@endif
+</div><br>
+<div class="row">
+<div class="col-sm-12">
+<a href="{{'/fashion'}}">
+<input type="button" class="btn btn-dark" name="" Value="Show More" style="float: right;" ></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+@endsection

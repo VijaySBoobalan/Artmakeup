@@ -12,7 +12,7 @@ class ImageUploadController extends Controller
     }
 
     public function index(){
-        $show = $this->Image->paginate(32);
+        $show = $this->Image->paginate(10);
     	return view('imageupload.imageupload',compact('show'));
     }
 

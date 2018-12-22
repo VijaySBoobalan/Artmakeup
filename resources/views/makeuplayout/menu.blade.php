@@ -8,37 +8,46 @@
 
   <div class="collapse navbar-collapse w3-hide-medium menu-cen">
     <ul class="navbar-nav  cen">
-      <li  class="nav-item active">
-        <a class="nav-link" href="{{url('/about')}}">ABOUT ME</a>
+      <li  class="nav-item active" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+        <a class="nav-link" href="{{url('/about')}}" >ABOUT ME</a>
       </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="{{url('/portfolio')}}">PORTFOLIO</a>
+      <li  class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+        <a class="nav-link" href="{{url('/portfolio')}}"  >PORTFOLIO</a>
       </li>
-      <li class="nav-item" >
-        <a class="nav-link" href="{{url('/')}}"><img class="logo" src="./logo/logo.png"></a>
+      <li class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;" >
+        <a class="nav-link" href="{{url('/')}}" ><img class="logo" src="./logo/logo.png"></a>
       </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="{{url('/services')}}">SERVICES</a>
+      <li  class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+        <a class="nav-link" href="{{url('/services')}}" >SERVICES</a>
       </li>
-      <li  class="nav-item">
-        <a class="nav-link" href="{{url('/contact')}}">CONTACT</a>
+      <li  class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+        <a class="nav-link" href="{{url('/contact')}}" >CONTACT</a>
       </li>
     </ul>
   </div>
 
     <div class=" w3-hide-large  collapse navbar-collapse " id="collapsibleNavbar">
       <ul class="navbar-nav w3-hide-large  menu-mob">
-        <li class="nav-item active" >
-          <a class="nav-link" href="about.php">ABOUT ME</a>
+        <li class="nav-item active" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+          <a class="nav-link" href="{{url('/about')}}">ABOUT ME</a>
         </li>
-        <li  class="nav-item">
-          <a class="nav-link" href="portfolio.php">PORTFOLIO</a>
+        <li  class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+          <a class="nav-link" href="{{url('/portfolio')}}">PORTFOLIO</a>
         </li>
-        <li  class="nav-item">
-          <a class="nav-link" href="services.php">SERVICES</a>
+        <li  class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+          <a class="nav-link" href="{{url('/services')}}">SERVICES</a>
         </li>
-        <li  class="nav-item">
-          <a class="nav-link" href="contact.php">CONTACT</a>
+        <li  class="nav-item" style="margin-left: 20px;margin-right: 20px;
+font-size: 19px;margin-top: 10px;">
+          <a class="nav-link" href="{{url('/contact')}}">CONTACT</a>
         </li>
       </ul>
     </div>
