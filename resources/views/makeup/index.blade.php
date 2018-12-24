@@ -2,6 +2,20 @@
 
 
 @section('content')
+<section class="w3-hide-small w3-hide-medium section_gap">
+        <div class="row">
+          <div class="col-6">
+            <img class="about_img" src="img/about_rhea_new.png" alt="">
+          </div>
+          <div class="col-6">
+            <img class="about_logo" src="logo/logo.png" alt="">
+            <div class="artist_name">
+              Artistry by Rhea Thadani
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--content small-->
       <section class="w3-hide-large ">
         <div class="row">
             <img class="about_img_sm" src="img/about_rhea_new.png" alt="">

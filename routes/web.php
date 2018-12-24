@@ -21,9 +21,10 @@ Route::get('/about', function() {
 Route::get('/contact', function() {
     return view('makeup.contact');
 });
-Route::get('/portfolio', function() {
-    return view('makeup.portfolio');
-});
+Route::get('/bridal','ArtmakeupController@bridal');
+Route::get('/fashion','ArtmakeupController@Fashion');
+Route::get('/portfolio','ArtmakeupController@portfolio');
+
 Route::get('/', function() {
     return view('makeup.index');
 });
@@ -40,4 +41,3 @@ Route::get('/image', 'ImageUploadController@index');
 Route::POST('/store','ImageUploadController@store')->name('upload');
 Route::delete('/delete/{id}/delete','ImageUploadController@delete')->name('delete');
 
-Route::get('/portfolio', 'ArtmakeupController@index');

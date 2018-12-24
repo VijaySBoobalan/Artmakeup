@@ -24,10 +24,10 @@
               <option value="fashion">Fashion</option>
             </select>
        </div>
-       
+       <div class="col-sm-8 col-offset-sm-5" >
        <input type="file" class="btn btn-info btn-sm" name="images[]" style="margin: 8px;" multiple>
           <button type="submit" class="btn btn-primary" style="margin: 8px;">Upload</button>
-       
+       </div>
       </div>
       </div>
       </div>
@@ -40,7 +40,8 @@
     <div class="col-md-3">
       <div class="tile">
         <div class="embed-responsive ">
-          <center><img class="img" src="{{$detail->name}}" alt="gallery"></center><br>
+
+          <center><img class="img" src="{{ url($detail->name) }}" alt="gallery"></center><br>
           <form action="{{ route('delete',$detail->id)}}" method="POST">
             {{ csrf_field() }}
             <input type="hidden" name="_method" value="DELETE">
@@ -50,8 +51,10 @@
       </div>
     </div>
     @endforeach
+    
     <br>
   </div>
-  {{$show->OnEachSide(2)->Links()}}
   
-  @endsection
+    {{$show->OnEachSide(2)->Links()}}
+ 
+   @endsection
