@@ -1,13 +1,18 @@
 
 ul li a{
   color: white;
+  font-weight: 200;
+  font-family: 'Lato';
+ }
+/*ul li a{
+  
   margin-left: 20px;
   margin-right: 20px;
-  font-weight: 200;
+  
   font-size: 19px;
-  font-family: 'Lato';
+  
   margin-top: 10px;
-}
+}*/
 ul li a:hover{
   color: white;
 }
