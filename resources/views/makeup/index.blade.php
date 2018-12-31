@@ -1,6 +1,9 @@
 @extends('makeuplayout.master')
 @section('content')
+
 <!--content large-->
+
+
 <section class="w3-hide-small w3-hide-medium section_gap">
         <div class="row">
           <div class="col-6">
@@ -14,6 +17,7 @@
           </div>
         </div>
       </section>
+
       <!--content small-->
         <section class=" w3-hide-large section_sm">
         <div class="row">

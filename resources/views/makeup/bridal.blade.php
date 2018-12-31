@@ -3,7 +3,7 @@
 @section('content')
     <div class="w3-hide-small w3-hide-medium">
     <div class="row ">
-      <h1 class="about_h1 heading"> <a href="/bridal">Bridal</a> & <a href="/fashion">Fashion</a> </h1>
+      <h1 class="about_h1 heading"> <a href="{{ url('bridal') }}">Bridal</a> & <a href="{{ url('fashion') }}">Fashion</a> </h1>
     </div>
     <section id="bridal">
       <div class="row" >
@@ -17,37 +17,37 @@
         <div class="row">
           <div class="col-6">
             @if(!empty(($Bridals[0])))
-            <img class="port-l"src="{{ $Bridals[0]->name }}" alt="">
+            <img class="port-l"src="{{ url($Bridals[0]->name) }}" alt="">
             @endif
           </div>
           
           <div class="col-6">
             @if(!empty(($Bridals[1])))
-            <img class="port-r"src="{{ $Bridals[1]->name }}" alt="">
+            <img class="port-r"src="{{ url($Bridals[1]->name) }}" alt="">
              @endif
           </div>
         </div>
         
         <div class="row">
           @if(!empty(($Bridals[2])))
-              <img class="port-m" src="{{ $Bridals[2]->name }}" alt="">
+              <img class="port-m" src="{{ url($Bridals[2]->name) }}" alt="">
           @endif
         </div>
         <div class="row">
           <div class="col-6">
             @if(!empty(($Bridals[3])))
-            <img class="port-l"src="{{ $Bridals[3]->name }}" alt="">
+            <img class="port-l"src="{{ url($Bridals[3]->name) }}" alt="">
             @endif
           </div>
           <div class="col-6">
             @if(!empty(($Bridals[4])))
-            <img class="port-r"src="{{ $Bridals[4]->name }}" alt="">
+            <img class="port-r"src="{{ url($Bridals[4]->name) }}" alt="">
             @endif
           </div>
         </div>
         <div class="row">
           @if(!empty(($Bridals[5])))
-          <img class="port-m" src="{{ $Bridals[5]->name }}" alt="">
+          <img class="port-m" src="{{ url($Bridals[5]->name) }}" alt="">
           @endif
         </div><br>
         <div class="paginate">
@@ -60,7 +60,7 @@
 {{-- Bootsrtap Page --}}
 <div class="w3-hide-large">
 <div class="row ">
-<h1 class="about_h1 heading-sm"> <a href="/bridal">Bridal</a> & <a href="/fashion">Fashion</a> </h1>
+<h1 class="about_h1 heading-sm"> <a href="{{ url('bridal') }}">Bridal</a> & <a href="{{ url('fashion') }}">Fashion</a> </h1>
 </div>
 <section id="bridal-sm">
 <div class="row" >
@@ -72,35 +72,35 @@
 <div class="row">
 <div class="col-6">
 @if(!empty(($Bridals[0])))
-<img class="port-s"src="{{ $Bridals[0]->name }}" width="460" height="345" alt="">
+<img class="port-s"src="{{ url($Bridals[0]->name) }}" width="460" height="345" alt="">
 @endif
 </div>
 <div class="col-6">
 @if(!empty(($Bridals[1])))
-<img class="port-s"src="{{ $Bridals[1]->name }}" width="460" height="345" alt="">
+<img class="port-s"src="{{ url($Bridals[1]->name) }}" width="460" height="345" alt="">
 @endif
 </div> 
 </div>
 <div class="row">
 @if(!empty(($Bridals[2])))
-<img class="port-sm" src="{{ $Bridals[2]->name }}" width="460" height="345" alt="">
+<img class="port-sm" src="{{ url($Bridals[2]->name) }}" width="460" height="345" alt="">
 @endif
 </div>
 <div class="row">
 <div class="col-6">
 @if(!empty(($Bridals[3])))
-<img class="port-s"src="{{ $Bridals[3]->name }}" width="460" height="345" alt="">
+<img class="port-s"src="{{ url($Bridals[3]->name) }}" width="460" height="345" alt="">
 @endif
 </div>
 <div class="col-6">
 @if(!empty(($Bridals[4])))
-<img class="port-s"src="{{ $Bridals[4]->name }}" width="460" height="345" alt="">
+<img class="port-s"src="{{ url($Bridals[4]->name) }}" width="460" height="345" alt="">
 @endif
 </div> 
 </div>
 <div class="row">
 @if(!empty(($Bridals[5])))
-<img class="port-sm" src="{{ $Bridals[5]->name }}" width="460" height="345" alt="">
+<img class="port-sm" src="{{ url($Bridals[5]->name) }}" width="460" height="345" alt="">
 @endif
 </div><br>
 <div class="paginate">

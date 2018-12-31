@@ -24,6 +24,7 @@ Route::get('/contact', function() {
 Route::get('/bridal','ArtmakeupController@bridal');
 Route::get('/fashion','ArtmakeupController@Fashion');
 Route::get('/portfolio','ArtmakeupController@portfolio');
+
 Route::get('/', function() {
     return view('makeup.index');
 });
@@ -37,3 +38,4 @@ Route::get('/home', function() {
 Route::get('/image', 'ImageUploadController@index');
 Route::POST('/store','ImageUploadController@store')->name('upload');
 Route::delete('/delete/{id}/delete','ImageUploadController@delete')->name('delete');
+

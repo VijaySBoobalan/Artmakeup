@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Image;
 use Illuminate\Http\Request;
-Use App\Image;
+
 
 class ArtmakeupController extends Controller
 {
