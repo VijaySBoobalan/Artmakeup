@@ -40,7 +40,7 @@
     <div class="col-md-3">
       <div class="tile">
         <div class="embed-responsive ">
-          <center><img class="img" src="{{$detail->name}}" alt="gallery"></center><br>
+          <center><img class="img" src="{{$detail->url(name)}}" alt="gallery"></center><br>
           <form action="{{ route('delete',$detail->id)}}" method="POST">
             {{ csrf_field() }}
             <input type="hidden" name="_method" value="DELETE">

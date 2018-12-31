@@ -13,4 +13,4 @@
 <link rel="stylesheet" href="{{ url('css/main1.css') }}">
 <link rel="stylesheet" href="{{ url('css/footer.css') }}">
 <script src="{{ url('js/menu.js') }}"></script>
-<body style="background:url(img/bg.jpg);background-repeat: no-repeat; background-attachment: fixed;">
+<body style="background:url(img/bg.jpg);background-repeat:repeat; background-attachment: fixed;">

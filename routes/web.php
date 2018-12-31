@@ -14,24 +14,22 @@
 Route::get('/admin/login', function () {
     return view('auth.login');
 });
-
 Route::get('/about', function() {
     return view ('makeup.about');
 });
 Route::get('/contact', function() {
     return view('makeup.contact');
 });
+
 Route::get('/bridal','ArtmakeupController@bridal');
 Route::get('/fashion','ArtmakeupController@Fashion');
 Route::get('/portfolio','ArtmakeupController@portfolio');
 Route::get('/', function() {
     return view('makeup.index');
 });
-
 Route::get('/services', function() {
     return view('makeup.services');
 });
-
 Auth::routes();
 Route::get('/home', function() {
     return redirect('/image');

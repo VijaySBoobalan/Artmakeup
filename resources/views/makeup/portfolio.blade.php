@@ -1,6 +1,4 @@
 @extends('makeuplayout.master')
-
-
 @section('content')
     <div class="w3-hide-small w3-hide-medium">
     <div class="row ">
