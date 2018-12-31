@@ -3,7 +3,7 @@
 @section('content')
     <div class="w3-hide-small w3-hide-medium">
     <div class="row ">
-      <h1 class="about_h1 heading"> <a href="/bridal">Bridal</a> & <a href="/fashion">Fashion</a> </h1>
+      <h1 class="about_h1 heading"> <a href="{{ url('bridal') }}">Bridal</a> & <a href="{{ url('fashion') }}">Fashion</a> </h1>
     </div>
     <section id="bridal">
       <div class="row" >
@@ -60,7 +60,7 @@
 {{-- Bootsrtap Page --}}
 <div class="w3-hide-large">
 <div class="row ">
-<h1 class="about_h1 heading-sm"> <a href="/bridal">Bridal</a> & <a href="/fashion">Fashion</a> </h1>
+<h1 class="about_h1 heading-sm"> <a href="{{ url('bridal') }}">Bridal</a> & <a href="{{ url('fashion') }}">Fashion</a> </h1>
 </div>
 <section id="bridal-sm">
 <div class="row" >
