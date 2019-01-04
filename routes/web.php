@@ -24,6 +24,7 @@ Route::get('/contact', function() {
 Route::get('/bridal','ArtmakeupController@bridal');
 Route::get('/fashion','ArtmakeupController@Fashion');
 Route::get('/portfolio','ArtmakeupController@portfolio');
+Route::post('/sendMail','MailController@sendMail')->name('sendMail');
 
 Route::get('/', function() {
     return view('makeup.index');

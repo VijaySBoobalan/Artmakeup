@@ -10,7 +10,10 @@
         <div class="col-7 right_form">
           <h1 class="about_h1">Get in touch with me</h1>
           <p class="about_p">Fill in the form to book an appointment with me,or if you have any queries. I will get in touch with you shortly.</p>
-              <form action="#">
+             
+                <form action="{{route('sendMail')}}" method="post" id="contact_form"  enctype="multipart/form-data">
+                        @csrf
+
                 <div class="form-group">
                   <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
                 </div>

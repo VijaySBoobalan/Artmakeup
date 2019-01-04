@@ -13,48 +13,51 @@
       </div>
      
       <div class="gallery">
-        <div class="row">
-          <div class="col-6">
-            @if(!empty((@$Bridals[0])))
-            <img class="port-l"src="{{ url(@$Bridals[0]->name) }}" alt="">
-            @endif
-          </div>
-          
-          <div class="col-6">
-            @if(!empty((@$Bridals[1])))
-            <img class="port-r"src="{{ url(@$Bridals[1]->name) }}" alt="">
-             @endif
-          </div>
-        </div>
-        <div class="row">
-          @if(!empty((@$Bridals[2])))
-              <img class="port-m" src="{{ url(@$Bridals[2]->name) }}" alt="">
-          @endif
-        </div>
-        <div class="row">
-          <div class="col-6">
-            @if(!empty(($Bridals[3])))
-            <img class="port-l"src="{{ url($Bridals[3]->name) }}" alt="">
-            @endif
-          </div>
-          <div class="col-6">
-            @if(!empty(($Bridals[4])))
-            <img class="port-r"src="{{ url($Bridals[4]->name) }}" alt="">
-            @endif
-          </div>
-        </div>
-        <div class="row">
-          @if(!empty(($Bridals[5])))
-          <img class="port-m" src="{{ url($Bridals[5]->name) }}" alt="">
-          @endif
-        </div><br>
-        <div class="row">
-            <div class="col-sm-12">
-              <a href="{{'/bridal'}}">
-            <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" ></a>
-          </div>
-        </div>
+              @if($Bridals > 6)
+              <div class="row">
+                <div class="col-6">
+                  @if(!empty((@$Bridals[0])))
+                  <img class="port-l"src="{{ url(@$Bridals[0]->name) }}" alt="">
+                  @endif
+                </div>
+                
+                <div class="col-6">
+                  @if(!empty((@$Bridals[1])))
+                  <img class="port-r"src="{{ url(@$Bridals[1]->name) }}" alt="">
+                   @endif
+                </div>
+              </div>
+              <div class="row">
+                @if(!empty((@$Bridals[2])))
+                    <img class="port-m" src="{{ url(@$Bridals[2]->name) }}" alt="">
+                @endif
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  @if(!empty(($Bridals[3])))
+                  <img class="port-l"src="{{ url($Bridals[3]->name) }}" alt="">
+                  @endif
+                </div>
+                <div class="col-6">
+                  @if(!empty(($Bridals[4])))
+                  <img class="port-r"src="{{ url($Bridals[4]->name) }}" alt="">
+                  @endif
+                </div>
+              </div>
+              <div class="row">
+                @if(!empty(($Bridals[5])))
+                <img class="port-m" src="{{ url($Bridals[5]->name) }}" alt="">
+                @endif
+              </div><br>
+              <div class="row">
+                  <div class="col-sm-12">
+                    <a href="{{'/bridal'}}">
+                  <input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" ></a>
+                </div>
+              </div>
+              @endif
       </div>
+
     </section>
     <section id="fashion" class="section_gap">
       <br>
@@ -96,7 +99,7 @@
             <img class="port-m" src="{{ url($Fashion[5]->name) }}" alt="">
           @endif
         </div><br>
-        <div class="row">
+       <div class="row">
             <div class="col-sm-12">
               <a href="{{'/fashion'}}"><input type="button" class="btn btn-dark" name="" Value="Show More" style="float:right;" ></a>
             </div>
